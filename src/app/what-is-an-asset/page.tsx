@@ -15,6 +15,7 @@ import {
   Sparkles,
   Users
 } from "lucide-react";
+import { getAssetPath } from "../../utils/assetPath";
 
 export default function WhatIsAnAsset() {
   return (
@@ -194,7 +195,7 @@ export default function WhatIsAnAsset() {
 
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 mb-4 bg-neutral-950 group">
               <Image 
-                src="/images/chicken_group.png" 
+                src={getAssetPath("/images/chicken_group.png")} 
                 alt="Chicken flock group tracking history popup interface" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

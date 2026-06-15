@@ -29,6 +29,7 @@ import {
   Layout,
   RefreshCw
 } from "lucide-react";
+import { getAssetPath } from "../../utils/assetPath";
 
 interface ChatMessage {
   sender: "user" | "ai";
@@ -392,7 +393,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">Foliage and soil application in Endtime Essentials. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_spray1.jpg" alt="Spraying soil and foliage" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_spray1.jpg")} alt="Spraying soil and foliage" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -402,7 +403,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">Spraying compost and mykovam areas near coconuts. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_spray2.jpg" alt="Spraying under tree canopy" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_spray2.jpg")} alt="Spraying under tree canopy" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -412,7 +413,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">The leaves are spotted. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_spotted.jpg" alt="Spotted leaf inspection" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_spotted.jpg")} alt="Spotted leaf inspection" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -434,7 +435,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">I notice there's a problem with the bubble in that air is leaking between the canisters instead of coming up through the vermi. I added additional water to cover the cylinders so there would be more diffusion of microbes out of the cylinders. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_bubbles.jpg" alt="Air leaking between canisters in brewer" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_bubbles.jpg")} alt="Air leaking between canisters in brewer" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -444,7 +445,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">I diluted the vermi tea 10:1. since this is a 16l backpack i did about 1.5 l of vermitea <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_backpack.jpg" alt="Vermi tea backpack dilution" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_backpack.jpg")} alt="Vermi tea backpack dilution" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -454,7 +455,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">I started this Saturday morning and used most of it Monday. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_brewer.png" alt="Compost Tea Brewer container setup" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_brewer.png")} alt="Compost Tea Brewer container setup" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -476,7 +477,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">I cut Madre de cacao from an old stump behind the chicken area. I left the small stems in the compost area so they can be shredded and used as a green for composting. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_cuttings1.jpg" alt="Cutting Madre de cacao cuttings" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_cuttings1.jpg")} alt="Cutting Madre de cacao cuttings" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -486,7 +487,7 @@ export default function WhatIsAnAction() {
                             <div className="flex-1">
                               <p className="mb-2">Dipped in anaa for 15min. Planted with mycovam and applied vermitea afterwards. <span className="bg-neutral-900 border border-white/10 px-1 py-0.5 rounded text-[10px] text-neutral-500 font-mono">AI Description</span></p>
                               <div className="relative w-36 aspect-[4/3] rounded-lg overflow-hidden border border-white/10 bg-neutral-950 mt-1.5">
-                                <Image src="/images/vermitea_cuttings2.jpg" alt="AA dip and planting with mycovam" fill className="object-cover" />
+                                <Image src={getAssetPath("/images/vermitea_cuttings2.jpg")} alt="AA dip and planting with mycovam" fill className="object-cover" />
                               </div>
                             </div>
                           </div>
@@ -895,7 +896,7 @@ export default function WhatIsAnAction() {
       <footer className="mt-20 border-t border-white/5 py-12 px-6 bg-neutral-950 text-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <Image src="/centripetal-logo.png" alt="Centripetal Logo" width={24} height={24} className="rounded-md animate-spin [animation-duration:12s]" />
+            <Image src={getAssetPath("/centripetal-logo.png")} alt="Centripetal Logo" width={24} height={24} className="rounded-md animate-spin [animation-duration:12s]" />
             <span className="font-bold text-lg text-white">Centripetal ∈ S</span>
           </div>
           <div className="flex items-center gap-2 text-neutral-500 text-sm">

@@ -11,6 +11,7 @@ import {
   Zap,
   Globe
 } from "lucide-react";
+import { getAssetPath } from "../../utils/assetPath";
 
 export default function WhyFieldPhotos() {
   return (
@@ -85,7 +86,7 @@ export default function WhyFieldPhotos() {
 
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 mb-4 bg-neutral-950 group">
               <Image 
-                src="/images/field_photo_before.jpg" 
+                src={getAssetPath("/images/field_photo_before.jpg")} 
                 alt="Plant serving as a visual sensor" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -120,7 +121,7 @@ export default function WhyFieldPhotos() {
 
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 mb-4 bg-neutral-950 group">
               <Image 
-                src="/images/field_photo_after.jpg" 
+                src={getAssetPath("/images/field_photo_after.jpg")} 
                 alt="Action taken and results on a plant" 
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"

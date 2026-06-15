@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowLeft, TrendingDown, Search, ShieldCheck, ExternalLink, Receipt, Edit, Trash2, Camera, FileText, User, Share2, Fuel, Ruler } from "lucide-react";
+import { getAssetPath } from "../../utils/assetPath";
 
 export default function WhyExpensesMatter() {
   return (
@@ -88,7 +89,7 @@ export default function WhyExpensesMatter() {
               <div className="flex flex-col md:flex-row gap-6 p-4 rounded-2xl bg-neutral-950/40 border border-white/5 hover:border-emerald-500/20 transition-all duration-300">
                 <div className="w-full md:w-56 h-56 rounded-xl overflow-hidden border border-white/10 shrink-0 relative group">
                   <img 
-                    src="/images/nipa_receipt.png" 
+                    src={getAssetPath("/images/nipa_receipt.png")} 
                     alt="Borda's Bamboo & Nipa Seller receipt"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -107,7 +108,7 @@ export default function WhyExpensesMatter() {
               <div className="flex flex-col md:flex-row gap-6 p-4 rounded-2xl bg-neutral-950/40 border border-white/5 hover:border-emerald-500/20 transition-all duration-300">
                 <div className="w-full md:w-56 h-56 rounded-xl overflow-hidden border border-white/10 shrink-0 relative group">
                   <img 
-                    src="/images/nipa_transport.png" 
+                    src={getAssetPath("/images/nipa_transport.png")} 
                     alt="Nipa transport delivery motorcycle"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -205,7 +206,7 @@ export default function WhyExpensesMatter() {
             </div>
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-white p-2.5 shadow-inner mt-auto">
               <img 
-                src="/images/price_list.png" 
+                src={getAssetPath("/images/price_list.png")} 
                 alt="Supplier construction materials price list"
                 className="w-full h-auto object-contain rounded-lg"
               />
@@ -229,14 +230,14 @@ export default function WhyExpensesMatter() {
             <div className="grid grid-cols-2 gap-3 mt-auto">
               <div className="rounded-2xl overflow-hidden border border-white/10 bg-neutral-950 p-1 flex items-center justify-center h-28">
                 <img 
-                  src="/images/river_rock.jpg" 
+                  src={getAssetPath("/images/river_rock.jpg")} 
                   alt="Supplier sample claimed as 3/4 river rock"
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
               <div className="rounded-2xl overflow-hidden border border-white/10 bg-neutral-950 p-1 flex items-center justify-center h-28">
                 <img 
-                  src="/images/crushed_rock.jpg" 
+                  src={getAssetPath("/images/crushed_rock.jpg")} 
                   alt="High quality crushed rock bed"
                   className="w-full h-full object-cover rounded-xl"
                 />
@@ -257,7 +258,7 @@ export default function WhyExpensesMatter() {
             </div>
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-white p-2.5 shadow-inner mt-auto">
               <img 
-                src="/images/barako_kml.png" 
+                src={getAssetPath("/images/barako_kml.png")} 
                 alt="Barako km/l calculations chart"
                 className="w-full h-auto object-contain rounded-lg"
               />

@@ -16,6 +16,7 @@ import {
   Info
 } from "lucide-react";
 import metrics from "../data/metrics.json";
+import { getAssetPath } from "../utils/assetPath";
 
 export default function LandingPage() {
   return (
@@ -32,7 +33,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10 flex items-center justify-center">
-              <Image src="/centripetal-logo.png" alt="Centripetal Logo" width={40} height={40} className="animate-spin [animation-duration:12s]" />
+              <Image src={getAssetPath("/centripetal-logo.png")} alt="Centripetal Logo" width={40} height={40} className="animate-spin [animation-duration:12s]" />
             </div>
             <span className="font-bold text-xl tracking-tight text-white">
               Centripetal ∈ S
@@ -48,7 +49,7 @@ export default function LandingPage() {
       <section id="mission" className="pt-40 pb-20 px-6 max-w-7xl mx-auto flex flex-col items-center text-center relative">
         {/* Massive Translucent Spinning Galaxy Background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-15 pointer-events-none -z-10 mix-blend-screen">
-          <Image src="/centripetal-logo.png" alt="Centripetal Galaxy Background" fill className="animate-spin [animation-duration:90s] object-contain rounded-full" />
+          <Image src={getAssetPath("/centripetal-logo.png")} alt="Centripetal Galaxy Background" fill className="animate-spin [animation-duration:90s] object-contain rounded-full" />
         </div>
         
         <div className="max-w-4xl relative z-10">
@@ -198,7 +199,7 @@ export default function LandingPage() {
       <footer className="border-t border-white/5 py-12 px-6 bg-neutral-950">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <Image src="/centripetal-logo.png" alt="Centripetal Logo" width={24} height={24} className="rounded-md animate-spin [animation-duration:12s]" />
+            <Image src={getAssetPath("/centripetal-logo.png")} alt="Centripetal Logo" width={24} height={24} className="rounded-md animate-spin [animation-duration:12s]" />
             <span className="font-bold text-lg text-white">Centripetal ∈ S</span>
           </div>
 
