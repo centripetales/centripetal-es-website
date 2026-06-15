@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
+  basePath: process.env.GITHUB_ACTIONS ? "/centripetal-es-website" : "",
   images: {
     unoptimized: true,
     remotePatterns: [
