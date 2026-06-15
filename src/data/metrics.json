@@ -1,0 +1,17 @@
+{
+  "assets": 1148,
+  "observations": 6252,
+  "actions": 564,
+  "images": 4460,
+  "transactions": 3398,
+  "ai": 109,
+  "growth": {
+    "assets": 0,
+    "observations": 97,
+    "actions": 2,
+    "images": 83,
+    "transactions": 3,
+    "ai": 13
+  },
+  "lastUpdated": "2026-06-14T07:04:01.241Z"
+}

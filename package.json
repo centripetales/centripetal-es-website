@@ -4,14 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:fetch-metrics": "node scripts/fetch-metrics.cjs",
+    "build": "npm run build:fetch-metrics && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.16.0",
     "next": "16.2.6",
+    "pg": "^8.21.0",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
